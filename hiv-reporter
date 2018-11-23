@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+import json
+
+def extract_subtype_information(input_json):
+    try:
+        subtype = input_json['subtypeText']
+    except:
+        print("Subtype data not found")
+    return subtype
+
+
+def extract_gene_sequences(input_json):
+    try:
+        nucleic_acid = {}
+        for gene in input_json['alignedGeneSequences']:
+            genename = gene['gene']['name']
+            nucleic_acid[genename] = gene['alignedNAs']
+    except:
+        print("Nucleic acid alignment not found")
+    return nucleic_acid
+
+
+def extract_aa_sequences(input_json):
+    try:
+        amino_acid = {}
+        for gene in input_json['alignedGeneSequences']:
+            genename = gene['gene']['name']
+            amino_acid[genename] = gene['alignedAAs']
+    except:
+        print("Amino acid alignment not found")
+    return amino_acid
+
+
+def extract_lengths(input_json):
+    try:
+        gene_lengths = {}
+        for gene in input_json['alignedGeneSequences']:
+            genename = gene['gene']['name']
+            gene_lengths[genename] = { 'firstAA' : gene['firstAA'], 
+                                        'lastAA' : gene['lastAA'],
+                                        'length' : gene['gene']['length'] }
+    except:
+        print('Gene length data not found')
+    return gene_lengths
+
+
+def extract_resistance_summary(input_json):
+    try:
+        genelist = []
+        for gene in input_json['drugResistance']:
+            genelist.append(gene['gene']['name'])
+        gene_resistance_summary = dict.fromkeys(genelist)
+        for gene in input_json['drugResistance']:
+            drug_list = {}
+            for drug in gene['drugScores']:
+                genename = gene['gene']['name']
+                drugname = drug['drug']['name']
+                drug_list[drugname] = drug['text']
+            gene_resistance_summary[genename] = drug_list
+                
+    except:
+        print('Drug resistance summary data not found')
+    return gene_resistance_summary
+
+
+
+with open('example_json/example.good.json') as f:
+    data = json.load(f)
+    sierrapy_json = data[0]
+
+#subtypeText = extract_json_level(sierrapy_json, 'subtypeText')
+#alignedGeneSequences = extract_json_level(sierrapy_json, 'alignedGeneSequences')
+#drugResistance = extract_json_level(sierrapy_json, 'drugResistance')
+
+#print(extract_gene_sequences(sierrapy_json))
+#print(extract_aa_sequences(sierrapy_json))
+#print(extract_lengths(sierrapy_json))
+#print(extract_resistance_summary(sierrapy_json))
+print(extract_resistance_summary(sierrapy_json))
+#print(subtypeText)
+#print(alignedGeneSequences)
+#print(drugResistance[1])
+
