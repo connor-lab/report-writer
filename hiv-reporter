@@ -59,44 +59,61 @@ def extract_resistance_summary(input_json):
     try:
         drug_list = {}
         for drug in input_json['drugResistance'][0]['drugScores']:
+            genename = input_json['drugResistance'][0]['gene']['name']
             drugclass = drug['drugClass']['name']
             drugname = drug['drug']['name']
-            nameclass = drugclass + '-' + drugname
+            nameclass = genename + '-' + drugclass + '-' + drugname
             drugtext = drug['text']
             drug_list[nameclass] = drugtext
         for drug in input_json['drugResistance'][1]['drugScores']:
+            genename = input_json['drugResistance'][1]['gene']['name']
             drugclass = drug['drugClass']['name']
             drugname = drug['drug']['name']
-            nameclass = drugclass + '-' + drugname
+            nameclass = genename + '-' + drugclass + '-' + drugname
             drugtext = drug['text']
             drug_list[nameclass] = drugtext
         for drug in input_json['drugResistance'][2]['drugScores']:
+            genename = input_json['drugResistance'][2]['gene']['name']
             drugclass = drug['drugClass']['name']
             drugname = drug['drug']['name']
-            nameclass = drugclass + '-' + drugname
+            nameclass = genename + '-' + drugclass + '-' + drugname
             drugtext = drug['text']
             drug_list[nameclass] = drugtext
         gene_resistance_summary = collections.defaultdict(dict)
         for key,value in drug_list.items():
-            drugclass = key.split('-')[0]
-            drugname = key.split('-')[1]
-            gene_resistance_summary[drugclass][drugname] = value
+            gene = key.split('-')[0]
+            drugclass = key.split('-', 1)[1]
+            gene_resistance_summary[gene][drugclass] = value
         gene_resistance_summary = dict(gene_resistance_summary)
     except:
-        print('Drug resistance summary data not found')
-    
+       print('Drug resistance summary data not found')
+   
     return gene_resistance_summary
 
 def create_resistance_summary_table(input_json):
     try:
+        sequence_lengths = extract_lengths(input_json)
         drug_resistance_summary = extract_resistance_summary(input_json)
+        longformatgene = { 'IN' : 'Integrase', 
+                           'PR' : 'Protease', 
+                           'RT' : 'Reverse Transcriptase' }
         resistence_table_list = []
-        for drugclass,drugs in drug_resistance_summary.items():
+        for gene,drugs in drug_resistance_summary.items():
             resistance_summary_table = PrettyTable()
-            resistance_summary_table.field_names = [drugclass, 'Drug', 'Status']
+            resistance_summary_table.field_names = ['Drug Class', 'Drug', 'Status']
             for drug,status in drugs.items():
-                resistance_summary_table.add_row(['', drug, status])
-            resistance_summary_table.align['Status'] = "l"
+                drugclass = drug.split('-')[0]
+                drugname = drug.split('-')[1]
+                resistance_summary_table.add_row([drugclass, drugname, status])
+            
+            firstAA = str(sequence_lengths[gene]['firstAA'])
+            lastAA = str(sequence_lengths[gene]['lastAA'])
+            genelength = str(sequence_lengths[gene]['length'])
+            table_title = longformatgene[gene] + " [Codons analysed " + firstAA + "-" + lastAA + "/" + genelength + "]"
+            
+            resistance_summary_table.title = table_title 
+            resistance_summary_table.align = "l"
+
             resistence_table_list.append(resistance_summary_table)
     except:
         print('Failed to make resistance summary tables')
@@ -109,6 +126,8 @@ def main():
     with open('example_json/example.good.json') as f:
         data = json.load(f)
         sierrapy_json = data[0]
+    for i in create_resistance_summary_table(sierrapy_json):
+        print(i.get_string() + '\n')
 
 
 if __name__ == "__main__":
