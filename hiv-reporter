@@ -2,6 +2,7 @@
 
 from utils import makehash
 
+import argparse
 import json
 from prettytable import PrettyTable
 
@@ -21,6 +22,7 @@ def create_subtype_table(sampleID, input_json):
         subtype_table = PrettyTable()
         subtype_table.field_names = ['Sample', 'Subtype']
         subtype_table.add_row([sampleID , subtype])
+        subtype_table.align = "l"
     except:
         print("Failed to create subtype table")
     return subtype_table
@@ -75,7 +77,7 @@ def extract_resistance_summary(input_json):
                 gene = i['gene']['name']
                 gene_resistance_summary[gene][drugclass][drug] = text
     except:
-        print("oops")
+        print("Failed to parse drug resistance information")
 
     return gene_resistance_summary
 
@@ -104,8 +106,7 @@ def create_resistance_summary_table(input_json):
 
             resistence_table_list.append(resistance_summary_table)
     except:
-        print('Failed to make resistance summary tables')
-    
+        print('Failed to make resistance summary tables')  
     return resistence_table_list
 
 
@@ -134,7 +135,6 @@ def extract_drug_resistance_mutations(input_json):
                                 DRM_dict[drugclass][mutation] = comment
     except:
        print("Failed to extract DRMs")
-
     return DRM_dict
 
 def extract_all_mutations(input_json):
@@ -152,17 +152,20 @@ def extract_all_mutations(input_json):
             mut_dict[gene] = mut_list
     except:
         print("Failed to extract non-DRM mutations")
-
     return mut_dict
 
-def main():
-    with open('example_json/test.json') as f:
+def main(args):
+    with open(args.sierrapy_json) as f:
         data = json.load(f)
         sierrapy_json = data[0]
-    print(create_subtype_table('SampleID', sierrapy_json))
+    print(create_subtype_table(args.sample_id, sierrapy_json))
     for i in create_resistance_summary_table(sierrapy_json):
         print(i)
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description = 'Turns SierraPy JSON into useful output')
+    parser.add_argument('sierrapy_json', help='JSON file from SierraPy program')
+    parser.add_argument('sample_id', help='Sample ID')
+    args = parser.parse_args()
+    main(args)
