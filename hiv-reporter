@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import json
+import collections 
+from prettytable import PrettyTable
 
 def extract_subtype_information(input_json):
     try:
@@ -9,6 +11,15 @@ def extract_subtype_information(input_json):
         print("Subtype data not found")
     return subtype
 
+def create_subtype_table(sampleID, input_json):
+    try:
+        subtype = extract_subtype_information(input_json)
+        subtype_table = PrettyTable()
+        subtype_table.field_names = ['Sample', 'Subtype']
+        subtype_table.add_row([sampleID , subtype])
+    except:
+        print("Failed to create subtype table")
+    return subtype_table
 
 def extract_gene_sequences(input_json):
     try:
@@ -44,41 +55,61 @@ def extract_lengths(input_json):
         print('Gene length data not found')
     return gene_lengths
 
-
 def extract_resistance_summary(input_json):
     try:
-        genelist = []
-        for gene in input_json['drugResistance']:
-            genelist.append(gene['gene']['name'])
-        gene_resistance_summary = dict.fromkeys(genelist)
-        for gene in input_json['drugResistance']:
-            drug_list = {}
-            for drug in gene['drugScores']:
-                genename = gene['gene']['name']
-                drugname = drug['drug']['name']
-                drug_list[drugname] = drug['text']
-            gene_resistance_summary[genename] = drug_list
-                
+        drug_list = {}
+        for drug in input_json['drugResistance'][0]['drugScores']:
+            drugclass = drug['drugClass']['name']
+            drugname = drug['drug']['name']
+            nameclass = drugclass + '-' + drugname
+            drugtext = drug['text']
+            drug_list[nameclass] = drugtext
+        for drug in input_json['drugResistance'][1]['drugScores']:
+            drugclass = drug['drugClass']['name']
+            drugname = drug['drug']['name']
+            nameclass = drugclass + '-' + drugname
+            drugtext = drug['text']
+            drug_list[nameclass] = drugtext
+        for drug in input_json['drugResistance'][2]['drugScores']:
+            drugclass = drug['drugClass']['name']
+            drugname = drug['drug']['name']
+            nameclass = drugclass + '-' + drugname
+            drugtext = drug['text']
+            drug_list[nameclass] = drugtext
+        gene_resistance_summary = collections.defaultdict(dict)
+        for key,value in drug_list.items():
+            drugclass = key.split('-')[0]
+            drugname = key.split('-')[1]
+            gene_resistance_summary[drugclass][drugname] = value
+        gene_resistance_summary = dict(gene_resistance_summary)
     except:
         print('Drug resistance summary data not found')
+    
     return gene_resistance_summary
 
+def create_resistance_summary_table(input_json):
+    try:
+        drug_resistance_summary = extract_resistance_summary(input_json)
+        resistence_table_list = []
+        for drugclass,drugs in drug_resistance_summary.items():
+            resistance_summary_table = PrettyTable()
+            resistance_summary_table.field_names = [drugclass, 'Drug', 'Status']
+            for drug,status in drugs.items():
+                resistance_summary_table.add_row(['', drug, status])
+            resistance_summary_table.align['Status'] = "l"
+            resistence_table_list.append(resistance_summary_table)
+    except:
+        print('Failed to make resistance summary tables')
+
+    return resistence_table_list
 
 
-with open('example_json/example.good.json') as f:
-    data = json.load(f)
-    sierrapy_json = data[0]
 
-#subtypeText = extract_json_level(sierrapy_json, 'subtypeText')
-#alignedGeneSequences = extract_json_level(sierrapy_json, 'alignedGeneSequences')
-#drugResistance = extract_json_level(sierrapy_json, 'drugResistance')
+def main():
+    with open('example_json/example.good.json') as f:
+        data = json.load(f)
+        sierrapy_json = data[0]
 
-#print(extract_gene_sequences(sierrapy_json))
-#print(extract_aa_sequences(sierrapy_json))
-#print(extract_lengths(sierrapy_json))
-#print(extract_resistance_summary(sierrapy_json))
-print(extract_resistance_summary(sierrapy_json))
-#print(subtypeText)
-#print(alignedGeneSequences)
-#print(drugResistance[1])
 
+if __name__ == "__main__":
+    main()
