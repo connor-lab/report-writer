@@ -89,7 +89,7 @@ def create_resistance_summary_table(input_json):
         longformatgene = { 'IN' : 'Integrase', 
                            'PR' : 'Protease', 
                            'RT' : 'Reverse Transcriptase' }
-        resistence_table_list = []
+        resistance_table_list = []
         for gene,drugclass in drug_resistance_summary.items():
             resistance_summary_table = PrettyTable()
             resistance_summary_table.field_names = ['Drug Class', 'Drug', 'Status']
@@ -104,10 +104,10 @@ def create_resistance_summary_table(input_json):
             resistance_summary_table.title = table_title 
             resistance_summary_table.align = "l"
 
-            resistence_table_list.append(resistance_summary_table)
+            resistance_table_list.append(resistance_summary_table)
     except:
         print('Failed to make resistance summary tables')  
-    return resistence_table_list
+    return resistance_table_list
 
 
 def extract_drug_resistance_mutations(input_json):
