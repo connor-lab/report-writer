@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
+from utils import makehash
+
 import json
-import collections 
 from prettytable import PrettyTable
+
 
 def extract_subtype_information(input_json):
     try:
@@ -10,6 +12,8 @@ def extract_subtype_information(input_json):
     except:
         print("Subtype data not found")
     return subtype
+
+
 
 def create_subtype_table(sampleID, input_json):
     try:
@@ -20,6 +24,8 @@ def create_subtype_table(sampleID, input_json):
     except:
         print("Failed to create subtype table")
     return subtype_table
+
+
 
 def extract_gene_sequences(input_json):
     try:
@@ -32,6 +38,7 @@ def extract_gene_sequences(input_json):
     return nucleic_acid
 
 
+
 def extract_aa_sequences(input_json):
     try:
         amino_acid = {}
@@ -41,6 +48,7 @@ def extract_aa_sequences(input_json):
     except:
         print("Amino acid alignment not found")
     return amino_acid
+
 
 
 def extract_lengths(input_json):
@@ -55,40 +63,22 @@ def extract_lengths(input_json):
         print('Gene length data not found')
     return gene_lengths
 
+
 def extract_resistance_summary(input_json):
     try:
-        drug_list = {}
-        for drug in input_json['drugResistance'][0]['drugScores']:
-            genename = input_json['drugResistance'][0]['gene']['name']
-            drugclass = drug['drugClass']['name']
-            drugname = drug['drug']['name']
-            nameclass = genename + '-' + drugclass + '-' + drugname
-            drugtext = drug['text']
-            drug_list[nameclass] = drugtext
-        for drug in input_json['drugResistance'][1]['drugScores']:
-            genename = input_json['drugResistance'][1]['gene']['name']
-            drugclass = drug['drugClass']['name']
-            drugname = drug['drug']['name']
-            nameclass = genename + '-' + drugclass + '-' + drugname
-            drugtext = drug['text']
-            drug_list[nameclass] = drugtext
-        for drug in input_json['drugResistance'][2]['drugScores']:
-            genename = input_json['drugResistance'][2]['gene']['name']
-            drugclass = drug['drugClass']['name']
-            drugname = drug['drug']['name']
-            nameclass = genename + '-' + drugclass + '-' + drugname
-            drugtext = drug['text']
-            drug_list[nameclass] = drugtext
-        gene_resistance_summary = collections.defaultdict(dict)
-        for key,value in drug_list.items():
-            gene = key.split('-')[0]
-            drugclass = key.split('-', 1)[1]
-            gene_resistance_summary[gene][drugclass] = value
-        gene_resistance_summary = dict(gene_resistance_summary)
+        gene_resistance_summary = makehash()
+        for i in input_json['drugResistance']:
+            for j in i['drugScores']:
+                text = j['text']
+                drug = j['drug']['name']
+                drugclass = j['drugClass']['name']
+                gene = i['gene']['name']
+                gene_resistance_summary[gene][drugclass][drug] = text
     except:
-       print('Drug resistance summary data not found')
-   
+        print("oops")
+
     return gene_resistance_summary
+
 
 def create_resistance_summary_table(input_json):
     try:
@@ -98,36 +88,80 @@ def create_resistance_summary_table(input_json):
                            'PR' : 'Protease', 
                            'RT' : 'Reverse Transcriptase' }
         resistence_table_list = []
-        for gene,drugs in drug_resistance_summary.items():
+        for gene,drugclass in drug_resistance_summary.items():
             resistance_summary_table = PrettyTable()
             resistance_summary_table.field_names = ['Drug Class', 'Drug', 'Status']
-            for drug,status in drugs.items():
-                drugclass = drug.split('-')[0]
-                drugname = drug.split('-')[1]
-                resistance_summary_table.add_row([drugclass, drugname, status])
+            for drugclass,drug in drugclass.items():
+                for drug,status in drug.items():
+                    resistance_summary_table.add_row([drugclass, drug, status])
             
             firstAA = str(sequence_lengths[gene]['firstAA'])
             lastAA = str(sequence_lengths[gene]['lastAA'])
             genelength = str(sequence_lengths[gene]['length'])
             table_title = longformatgene[gene] + " [Codons analysed " + firstAA + "-" + lastAA + "/" + genelength + "]"
-            
             resistance_summary_table.title = table_title 
             resistance_summary_table.align = "l"
 
             resistence_table_list.append(resistance_summary_table)
     except:
         print('Failed to make resistance summary tables')
-
+    
     return resistence_table_list
 
 
+def extract_drug_resistance_mutations(input_json):
+    try:
+        DRM_dict = makehash()
+        for i in input_json['drugResistance']:
+            if 'PR' in i['gene']['name']:
+                for j in i['drugScores']:
+                    for k in j['partialScores']:
+                        for l in k['mutations']:
+                            for m in l['comments']:
+                                mut_type = l['primaryType']
+                                mutation = l['text']
+                                drugclass = j['drugClass']['name']
+                                comment = m['text']
+                                DRM_dict[drugclass][mut_type][mutation] = comment 
+            else:
+                for j in i['drugScores']:
+                    for k in j['partialScores']:
+                        for l in k['mutations']:
+                            for m in l['comments']:
+                                mutation = l['text']
+                                drugclass = j['drugClass']['name']
+                                comment = m['text']
+                                DRM_dict[drugclass][mutation] = comment
+    except:
+       print("Failed to extract DRMs")
+
+    return DRM_dict
+
+def extract_all_mutations(input_json):
+    try:
+        mut_dict = {}
+        for i in input_json['alignedGeneSequences']:
+            gene = i['gene']['name']
+            mut_list = []
+            for j in i['mutations']:
+                consensus = str(j['consensus'])
+                position = str(j['position'])
+                mutation = str(j['AAs'])
+                mut_string = consensus + position + mutation
+                mut_list.append(mut_string)
+            mut_dict[gene] = mut_list
+    except:
+        print("Failed to extract non-DRM mutations")
+
+    return mut_dict
 
 def main():
-    with open('example_json/example.good.json') as f:
+    with open('example_json/test.json') as f:
         data = json.load(f)
         sierrapy_json = data[0]
+    print(create_subtype_table('SampleID', sierrapy_json))
     for i in create_resistance_summary_table(sierrapy_json):
-        print(i.get_string() + '\n')
+        print(i)
 
 
 if __name__ == "__main__":

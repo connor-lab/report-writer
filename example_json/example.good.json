@@ -4443,7 +4443,23 @@
               "displayAbbr": "3TC"
             }, 
             "score": 0.0, 
-            "partialScores": [], 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "A13D",
+                    "primaryType": "NRTI",
+                    "comments": [
+                      {
+                        "type": "NRTI",
+                        "text": "A13D is a polymorphic accessory NNRTI-selected mutation. It contributes low-levels reductions in susceptibility to each of the NNRTIs. The combination of V179D and K103R act synergistically to reduce NVP and EFV susceptibility. V179D has a weight of 1.0 in the Tibotec ETR genotypic susceptibility score. V179E is a non-polymorphic mutation occasionally selected by NVP and EFV. V179E appears similar to V179D in its effects on NNRTIs. V179D/E do not appear to reduce the virological response to a first-line EFV-containing regimen."
+                      }
+                    ]
+                  }
+                ],
+                "score": 10.0
+              }
+            ],
             "text": "Susceptible"
           }, 
           {
@@ -4511,12 +4527,12 @@
               {
                 "mutations": [
                   {
-                    "text": "V179D", 
+                    "text": "X189Z", 
                     "primaryType": "NNRTI", 
                     "comments": [
                       {
                         "type": "NNRTI", 
-                        "text": "V179D is a polymorphic accessory NNRTI-selected mutation. It contributes low-levels reductions in susceptibility to each of the NNRTIs. The combination of V179D and K103R act synergistically to reduce NVP and EFV susceptibility. V179D has a weight of 1.0 in the Tibotec ETR genotypic susceptibility score. V179E is a non-polymorphic mutation occasionally selected by NVP and EFV. V179E appears similar to V179D in its effects on NNRTIs. V179D/E do not appear to reduce the virological response to a first-line EFV-containing regimen."
+                        "text": "X189Z is a polymorphic accessory NNRTI-selected mutation. It contributes low-levels reductions in susceptibility to each of the NNRTIs. The combination of V179D and K103R act synergistically to reduce NVP and EFV susceptibility. V179D has a weight of 1.0 in the Tibotec ETR genotypic susceptibility score. V179E is a non-polymorphic mutation occasionally selected by NVP and EFV. V179E appears similar to V179D in its effects on NNRTIs. V179D/E do not appear to reduce the virological response to a first-line EFV-containing regimen."
                       }
                     ]
                   }

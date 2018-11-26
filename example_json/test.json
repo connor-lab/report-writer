@@ -1,0 +1,3519 @@
+[
+  {
+    "inputSequence": {
+      "header": "NC599-1997|AY030413", 
+      "SHA512": "ba3a8d98679ce607d6cf957245f20215141d6c23dbd761f6f916a17afc5027d3c0e2f0d11b8770fb0697ceed0008e367ce316281b0a3b969ad8bcf8e710b9773"
+    }, 
+    "subtypeText": "B (3.17%)", 
+    "validationResults": [], 
+    "alignedGeneSequences": [
+      {
+        "firstAA": 1, 
+        "lastAA": 99, 
+        "gene": {
+          "name": "PR", 
+          "length": 99
+        }, 
+        "mutations": [
+          {
+            "consensus": "L", 
+            "position": 10, 
+            "AAs": "I", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "K", 
+            "position": 14, 
+            "AAs": "R", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "R", 
+            "position": 41, 
+            "AAs": "K", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "I", 
+            "position": 54, 
+            "AAs": "V", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "D", 
+            "position": 60, 
+            "AAs": "E", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "L", 
+            "position": 63, 
+            "AAs": "P", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "I", 
+            "position": 64, 
+            "AAs": "V", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "A", 
+            "position": 71, 
+            "AAs": "V", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "V", 
+            "position": 82, 
+            "AAs": "A", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "L", 
+            "position": 90, 
+            "AAs": "M", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "I", 
+            "position": 93, 
+            "AAs": "L", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }
+        ], 
+        "SDRMs": [
+          {
+            "text": "I54V"
+          }, 
+          {
+            "text": "V82A"
+          }, 
+          {
+            "text": "L90M"
+          }
+        ], 
+        "alignedNAs": "CCTCAAATCACTCTTTGGCAACGACCCATCGTCACAATAAGGATAGGAGGGCAACTAAAGGAAGCTCTATTAGATACAGGAGCAGATGATACAGTATTAGAAGAAATGAATTTGCCAGGAAAATGGAAACCAAAAATGATAGGGGGAATTGGAGGTTTTGTCAAAGTAAGACAGTATGAGCAGATACCCGTAGAAATCTGCGGACATAAAGTTATAGGTACAGTATTAGTAGGACCTACACCTGCCAACATAATTGGAAGAAATCTGATGACTCAGCTTGGTTGTACTTTAAATTTT", 
+        "alignedAAs": "PQITLWQRPIVTIRIGGQLKEALLDTGADDTVLEEMNLPGKWKPKMIGGIGGFVKVRQYEQIPVEICGHKVIGTVLVGPTPANIIGRNLMTQLGCTLNF", 
+        "prettyPairwise": {
+          "positionLine": [
+            " 1 ", 
+            " 2 ", 
+            " 3 ", 
+            " 4 ", 
+            " 5 ", 
+            " 6 ", 
+            " 7 ", 
+            " 8 ", 
+            " 9 ", 
+            "10 ", 
+            "11 ", 
+            "12 ", 
+            "13 ", 
+            "14 ", 
+            "15 ", 
+            "16 ", 
+            "17 ", 
+            "18 ", 
+            "19 ", 
+            "20 ", 
+            "21 ", 
+            "22 ", 
+            "23 ", 
+            "24 ", 
+            "25 ", 
+            "26 ", 
+            "27 ", 
+            "28 ", 
+            "29 ", 
+            "30 ", 
+            "31 ", 
+            "32 ", 
+            "33 ", 
+            "34 ", 
+            "35 ", 
+            "36 ", 
+            "37 ", 
+            "38 ", 
+            "39 ", 
+            "40 ", 
+            "41 ", 
+            "42 ", 
+            "43 ", 
+            "44 ", 
+            "45 ", 
+            "46 ", 
+            "47 ", 
+            "48 ", 
+            "49 ", 
+            "50 ", 
+            "51 ", 
+            "52 ", 
+            "53 ", 
+            "54 ", 
+            "55 ", 
+            "56 ", 
+            "57 ", 
+            "58 ", 
+            "59 ", 
+            "60 ", 
+            "61 ", 
+            "62 ", 
+            "63 ", 
+            "64 ", 
+            "65 ", 
+            "66 ", 
+            "67 ", 
+            "68 ", 
+            "69 ", 
+            "70 ", 
+            "71 ", 
+            "72 ", 
+            "73 ", 
+            "74 ", 
+            "75 ", 
+            "76 ", 
+            "77 ", 
+            "78 ", 
+            "79 ", 
+            "80 ", 
+            "81 ", 
+            "82 ", 
+            "83 ", 
+            "84 ", 
+            "85 ", 
+            "86 ", 
+            "87 ", 
+            "88 ", 
+            "89 ", 
+            "90 ", 
+            "91 ", 
+            "92 ", 
+            "93 ", 
+            "94 ", 
+            "95 ", 
+            "96 ", 
+            "97 ", 
+            "98 ", 
+            "99 "
+          ], 
+          "refAALine": [
+            " P ", 
+            " Q ", 
+            " I ", 
+            " T ", 
+            " L ", 
+            " W ", 
+            " Q ", 
+            " R ", 
+            " P ", 
+            " L ", 
+            " V ", 
+            " T ", 
+            " I ", 
+            " K ", 
+            " I ", 
+            " G ", 
+            " G ", 
+            " Q ", 
+            " L ", 
+            " K ", 
+            " E ", 
+            " A ", 
+            " L ", 
+            " L ", 
+            " D ", 
+            " T ", 
+            " G ", 
+            " A ", 
+            " D ", 
+            " D ", 
+            " T ", 
+            " V ", 
+            " L ", 
+            " E ", 
+            " E ", 
+            " M ", 
+            " N ", 
+            " L ", 
+            " P ", 
+            " G ", 
+            " R ", 
+            " W ", 
+            " K ", 
+            " P ", 
+            " K ", 
+            " M ", 
+            " I ", 
+            " G ", 
+            " G ", 
+            " I ", 
+            " G ", 
+            " G ", 
+            " F ", 
+            " I ", 
+            " K ", 
+            " V ", 
+            " R ", 
+            " Q ", 
+            " Y ", 
+            " D ", 
+            " Q ", 
+            " I ", 
+            " L ", 
+            " I ", 
+            " E ", 
+            " I ", 
+            " C ", 
+            " G ", 
+            " H ", 
+            " K ", 
+            " A ", 
+            " I ", 
+            " G ", 
+            " T ", 
+            " V ", 
+            " L ", 
+            " V ", 
+            " G ", 
+            " P ", 
+            " T ", 
+            " P ", 
+            " V ", 
+            " N ", 
+            " I ", 
+            " I ", 
+            " G ", 
+            " R ", 
+            " N ", 
+            " L ", 
+            " L ", 
+            " T ", 
+            " Q ", 
+            " I ", 
+            " G ", 
+            " C ", 
+            " T ", 
+            " L ", 
+            " N ", 
+            " F "
+          ], 
+          "alignedNAsLine": [
+            "CCT", 
+            "CAA", 
+            "ATC", 
+            "ACT", 
+            "CTT", 
+            "TGG", 
+            "CAA", 
+            "CGA", 
+            "CCC", 
+            "ATC", 
+            "GTC", 
+            "ACA", 
+            "ATA", 
+            "AGG", 
+            "ATA", 
+            "GGA", 
+            "GGG", 
+            "CAA", 
+            "CTA", 
+            "AAG", 
+            "GAA", 
+            "GCT", 
+            "CTA", 
+            "TTA", 
+            "GAT", 
+            "ACA", 
+            "GGA", 
+            "GCA", 
+            "GAT", 
+            "GAT", 
+            "ACA", 
+            "GTA", 
+            "TTA", 
+            "GAA", 
+            "GAA", 
+            "ATG", 
+            "AAT", 
+            "TTG", 
+            "CCA", 
+            "GGA", 
+            "AAA", 
+            "TGG", 
+            "AAA", 
+            "CCA", 
+            "AAA", 
+            "ATG", 
+            "ATA", 
+            "GGG", 
+            "GGA", 
+            "ATT", 
+            "GGA", 
+            "GGT", 
+            "TTT", 
+            "GTC", 
+            "AAA", 
+            "GTA", 
+            "AGA", 
+            "CAG", 
+            "TAT", 
+            "GAG", 
+            "CAG", 
+            "ATA", 
+            "CCC", 
+            "GTA", 
+            "GAA", 
+            "ATC", 
+            "TGC", 
+            "GGA", 
+            "CAT", 
+            "AAA", 
+            "GTT", 
+            "ATA", 
+            "GGT", 
+            "ACA", 
+            "GTA", 
+            "TTA", 
+            "GTA", 
+            "GGA", 
+            "CCT", 
+            "ACA", 
+            "CCT", 
+            "GCC", 
+            "AAC", 
+            "ATA", 
+            "ATT", 
+            "GGA", 
+            "AGA", 
+            "AAT", 
+            "CTG", 
+            "ATG", 
+            "ACT", 
+            "CAG", 
+            "CTT", 
+            "GGT", 
+            "TGT", 
+            "ACT", 
+            "TTA", 
+            "AAT", 
+            "TTT"
+          ], 
+          "mutationLine": [
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " I ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " R ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " K ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " V ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " E ", 
+            " - ", 
+            " - ", 
+            " P ", 
+            " V ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " V ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " A ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " M ", 
+            " - ", 
+            " - ", 
+            " L ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - "
+          ]
+        }
+      }, 
+      {
+        "firstAA": 1, 
+        "lastAA": 248, 
+        "gene": {
+          "name": "RT", 
+          "length": 560
+        }, 
+        "mutations": [
+          {
+            "consensus": "K", 
+            "position": 32, 
+            "AAs": "N", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "T", 
+            "position": 39, 
+            "AAs": "A", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "D", 
+            "position": 67, 
+            "AAs": "N", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": true
+          }, 
+          {
+            "consensus": "K", 
+            "position": 70, 
+            "AAs": "R", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "A", 
+            "position": 98, 
+            "AAs": "AS", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "D", 
+            "position": 121, 
+            "AAs": "Y", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "K", 
+            "position": 122, 
+            "AAs": "E", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "I", 
+            "position": 135, 
+            "AAs": "K", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "K", 
+            "position": 173, 
+            "AAs": "Q", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "I", 
+            "position": 178, 
+            "AAs": "L", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "T", 
+            "position": 215, 
+            "AAs": "F", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "K", 
+            "position": 219, 
+            "AAs": "Q", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }, 
+          {
+            "consensus": "V", 
+            "position": 245, 
+            "AAs": "Q", 
+            "isInsertion": false, 
+            "isDeletion": false, 
+            "isApobecDRM": false
+          }
+        ], 
+        "SDRMs": [
+          {
+            "text": "D67N"
+          }, 
+          {
+            "text": "K70R"
+          }, 
+          {
+            "text": "T215F"
+          }, 
+          {
+            "text": "K219Q"
+          }
+        ], 
+        "alignedNAs": "CCCATTAGTCCTATTGAAACTGTACCAGTAAAATTAAAGCCAGGAATGGATGGCCCAAAAGTTAAACAATGGCCATTGACAGAGGAAAAAATAAATGCATTAGTAGAAATTTGTGCAGAAATGGAAAAGGAAGGGAAAATTTCWAAAATTGGGCCTGAAAATCCATACAATACTCCAGTATTTGCYATAAAGAAAAAGAACAGTACTAGATGGAGAAAATTAGTAGATTTCAGAGAACTTAATAAGAGAACTCAAGACTTCTGGGAAGTTCAATTAGGAATACCACATCCCKCAGGGTTAAAAAAGAAAAAATCAGTAACAGTACTGGATGTGGGTGATGCATACTTTTCAGTTCCCTTATATGAAGACTTTAGAAAGTATACTGCATTTACCATACCTAGTAAAAACAATGAGACACCAGGGATTAGATACCAGTATAATGTGCTTCCACAGGGATGGAAAGGATCACCAGCAATATTCCAAAGTAGCATGACAAAAATCTTAGAGCCTTTTAGACAACAAAATCCAGACCTAGTTATCTATCAATACATGGATGATTTGTATGTAGGATCTGACTTAGAAATAGGGCAGCATAGAACAAAAATAGAGGAACTGAGACAACATCTGTTGAGGTGGGGATTTTTCACACCAGATCAAAAACATCAGAARGAACCYCCATTCCTTTGGATGGGTTATGAACTCCATCCTGATAAATGGACAGTACAGCCTATACAGCTGCCAGAA", 
+        "alignedAAs": "PISPIETVPVKLKPGMDGPKVKQWPLTEEKINALVEICAEMEKEGKISKIGPENPYNTPVFAIKKKNSTRWRKLVDFRELNKRTQDFWEVQLGIPHPSGLKKKKSVTVLDVGDAYFSVPLYEDFRKYTAFTIPSKNNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRQQNPDLVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGFFTPDQKHQKEPPFLWMGYELHPDKWTVQPIQLPE", 
+        "prettyPairwise": {
+          "positionLine": [
+            " 1 ", 
+            " 2 ", 
+            " 3 ", 
+            " 4 ", 
+            " 5 ", 
+            " 6 ", 
+            " 7 ", 
+            " 8 ", 
+            " 9 ", 
+            "10 ", 
+            "11 ", 
+            "12 ", 
+            "13 ", 
+            "14 ", 
+            "15 ", 
+            "16 ", 
+            "17 ", 
+            "18 ", 
+            "19 ", 
+            "20 ", 
+            "21 ", 
+            "22 ", 
+            "23 ", 
+            "24 ", 
+            "25 ", 
+            "26 ", 
+            "27 ", 
+            "28 ", 
+            "29 ", 
+            "30 ", 
+            "31 ", 
+            "32 ", 
+            "33 ", 
+            "34 ", 
+            "35 ", 
+            "36 ", 
+            "37 ", 
+            "38 ", 
+            "39 ", 
+            "40 ", 
+            "41 ", 
+            "42 ", 
+            "43 ", 
+            "44 ", 
+            "45 ", 
+            "46 ", 
+            "47 ", 
+            "48 ", 
+            "49 ", 
+            "50 ", 
+            "51 ", 
+            "52 ", 
+            "53 ", 
+            "54 ", 
+            "55 ", 
+            "56 ", 
+            "57 ", 
+            "58 ", 
+            "59 ", 
+            "60 ", 
+            "61 ", 
+            "62 ", 
+            "63 ", 
+            "64 ", 
+            "65 ", 
+            "66 ", 
+            "67 ", 
+            "68 ", 
+            "69 ", 
+            "70 ", 
+            "71 ", 
+            "72 ", 
+            "73 ", 
+            "74 ", 
+            "75 ", 
+            "76 ", 
+            "77 ", 
+            "78 ", 
+            "79 ", 
+            "80 ", 
+            "81 ", 
+            "82 ", 
+            "83 ", 
+            "84 ", 
+            "85 ", 
+            "86 ", 
+            "87 ", 
+            "88 ", 
+            "89 ", 
+            "90 ", 
+            "91 ", 
+            "92 ", 
+            "93 ", 
+            "94 ", 
+            "95 ", 
+            "96 ", 
+            "97 ", 
+            "98 ", 
+            "99 ", 
+            "100", 
+            "101", 
+            "102", 
+            "103", 
+            "104", 
+            "105", 
+            "106", 
+            "107", 
+            "108", 
+            "109", 
+            "110", 
+            "111", 
+            "112", 
+            "113", 
+            "114", 
+            "115", 
+            "116", 
+            "117", 
+            "118", 
+            "119", 
+            "120", 
+            "121", 
+            "122", 
+            "123", 
+            "124", 
+            "125", 
+            "126", 
+            "127", 
+            "128", 
+            "129", 
+            "130", 
+            "131", 
+            "132", 
+            "133", 
+            "134", 
+            "135", 
+            "136", 
+            "137", 
+            "138", 
+            "139", 
+            "140", 
+            "141", 
+            "142", 
+            "143", 
+            "144", 
+            "145", 
+            "146", 
+            "147", 
+            "148", 
+            "149", 
+            "150", 
+            "151", 
+            "152", 
+            "153", 
+            "154", 
+            "155", 
+            "156", 
+            "157", 
+            "158", 
+            "159", 
+            "160", 
+            "161", 
+            "162", 
+            "163", 
+            "164", 
+            "165", 
+            "166", 
+            "167", 
+            "168", 
+            "169", 
+            "170", 
+            "171", 
+            "172", 
+            "173", 
+            "174", 
+            "175", 
+            "176", 
+            "177", 
+            "178", 
+            "179", 
+            "180", 
+            "181", 
+            "182", 
+            "183", 
+            "184", 
+            "185", 
+            "186", 
+            "187", 
+            "188", 
+            "189", 
+            "190", 
+            "191", 
+            "192", 
+            "193", 
+            "194", 
+            "195", 
+            "196", 
+            "197", 
+            "198", 
+            "199", 
+            "200", 
+            "201", 
+            "202", 
+            "203", 
+            "204", 
+            "205", 
+            "206", 
+            "207", 
+            "208", 
+            "209", 
+            "210", 
+            "211", 
+            "212", 
+            "213", 
+            "214", 
+            "215", 
+            "216", 
+            "217", 
+            "218", 
+            "219", 
+            "220", 
+            "221", 
+            "222", 
+            "223", 
+            "224", 
+            "225", 
+            "226", 
+            "227", 
+            "228", 
+            "229", 
+            "230", 
+            "231", 
+            "232", 
+            "233", 
+            "234", 
+            "235", 
+            "236", 
+            "237", 
+            "238", 
+            "239", 
+            "240", 
+            "241", 
+            "242", 
+            "243", 
+            "244", 
+            "245", 
+            "246", 
+            "247", 
+            "248"
+          ], 
+          "refAALine": [
+            " P ", 
+            " I ", 
+            " S ", 
+            " P ", 
+            " I ", 
+            " E ", 
+            " T ", 
+            " V ", 
+            " P ", 
+            " V ", 
+            " K ", 
+            " L ", 
+            " K ", 
+            " P ", 
+            " G ", 
+            " M ", 
+            " D ", 
+            " G ", 
+            " P ", 
+            " K ", 
+            " V ", 
+            " K ", 
+            " Q ", 
+            " W ", 
+            " P ", 
+            " L ", 
+            " T ", 
+            " E ", 
+            " E ", 
+            " K ", 
+            " I ", 
+            " K ", 
+            " A ", 
+            " L ", 
+            " V ", 
+            " E ", 
+            " I ", 
+            " C ", 
+            " T ", 
+            " E ", 
+            " M ", 
+            " E ", 
+            " K ", 
+            " E ", 
+            " G ", 
+            " K ", 
+            " I ", 
+            " S ", 
+            " K ", 
+            " I ", 
+            " G ", 
+            " P ", 
+            " E ", 
+            " N ", 
+            " P ", 
+            " Y ", 
+            " N ", 
+            " T ", 
+            " P ", 
+            " V ", 
+            " F ", 
+            " A ", 
+            " I ", 
+            " K ", 
+            " K ", 
+            " K ", 
+            " D ", 
+            " S ", 
+            " T ", 
+            " K ", 
+            " W ", 
+            " R ", 
+            " K ", 
+            " L ", 
+            " V ", 
+            " D ", 
+            " F ", 
+            " R ", 
+            " E ", 
+            " L ", 
+            " N ", 
+            " K ", 
+            " R ", 
+            " T ", 
+            " Q ", 
+            " D ", 
+            " F ", 
+            " W ", 
+            " E ", 
+            " V ", 
+            " Q ", 
+            " L ", 
+            " G ", 
+            " I ", 
+            " P ", 
+            " H ", 
+            " P ", 
+            " A ", 
+            " G ", 
+            " L ", 
+            " K ", 
+            " K ", 
+            " K ", 
+            " K ", 
+            " S ", 
+            " V ", 
+            " T ", 
+            " V ", 
+            " L ", 
+            " D ", 
+            " V ", 
+            " G ", 
+            " D ", 
+            " A ", 
+            " Y ", 
+            " F ", 
+            " S ", 
+            " V ", 
+            " P ", 
+            " L ", 
+            " D ", 
+            " K ", 
+            " D ", 
+            " F ", 
+            " R ", 
+            " K ", 
+            " Y ", 
+            " T ", 
+            " A ", 
+            " F ", 
+            " T ", 
+            " I ", 
+            " P ", 
+            " S ", 
+            " I ", 
+            " N ", 
+            " N ", 
+            " E ", 
+            " T ", 
+            " P ", 
+            " G ", 
+            " I ", 
+            " R ", 
+            " Y ", 
+            " Q ", 
+            " Y ", 
+            " N ", 
+            " V ", 
+            " L ", 
+            " P ", 
+            " Q ", 
+            " G ", 
+            " W ", 
+            " K ", 
+            " G ", 
+            " S ", 
+            " P ", 
+            " A ", 
+            " I ", 
+            " F ", 
+            " Q ", 
+            " S ", 
+            " S ", 
+            " M ", 
+            " T ", 
+            " K ", 
+            " I ", 
+            " L ", 
+            " E ", 
+            " P ", 
+            " F ", 
+            " R ", 
+            " K ", 
+            " Q ", 
+            " N ", 
+            " P ", 
+            " D ", 
+            " I ", 
+            " V ", 
+            " I ", 
+            " Y ", 
+            " Q ", 
+            " Y ", 
+            " M ", 
+            " D ", 
+            " D ", 
+            " L ", 
+            " Y ", 
+            " V ", 
+            " G ", 
+            " S ", 
+            " D ", 
+            " L ", 
+            " E ", 
+            " I ", 
+            " G ", 
+            " Q ", 
+            " H ", 
+            " R ", 
+            " T ", 
+            " K ", 
+            " I ", 
+            " E ", 
+            " E ", 
+            " L ", 
+            " R ", 
+            " Q ", 
+            " H ", 
+            " L ", 
+            " L ", 
+            " R ", 
+            " W ", 
+            " G ", 
+            " F ", 
+            " T ", 
+            " T ", 
+            " P ", 
+            " D ", 
+            " K ", 
+            " K ", 
+            " H ", 
+            " Q ", 
+            " K ", 
+            " E ", 
+            " P ", 
+            " P ", 
+            " F ", 
+            " L ", 
+            " W ", 
+            " M ", 
+            " G ", 
+            " Y ", 
+            " E ", 
+            " L ", 
+            " H ", 
+            " P ", 
+            " D ", 
+            " K ", 
+            " W ", 
+            " T ", 
+            " V ", 
+            " Q ", 
+            " P ", 
+            " I ", 
+            " V ", 
+            " L ", 
+            " P ", 
+            " E "
+          ], 
+          "alignedNAsLine": [
+            "CCC", 
+            "ATT", 
+            "AGT", 
+            "CCT", 
+            "ATT", 
+            "GAA", 
+            "ACT", 
+            "GTA", 
+            "CCA", 
+            "GTA", 
+            "AAA", 
+            "TTA", 
+            "AAG", 
+            "CCA", 
+            "GGA", 
+            "ATG", 
+            "GAT", 
+            "GGC", 
+            "CCA", 
+            "AAA", 
+            "GTT", 
+            "AAA", 
+            "CAA", 
+            "TGG", 
+            "CCA", 
+            "TTG", 
+            "ACA", 
+            "GAG", 
+            "GAA", 
+            "AAA", 
+            "ATA", 
+            "AAT", 
+            "GCA", 
+            "TTA", 
+            "GTA", 
+            "GAA", 
+            "ATT", 
+            "TGT", 
+            "GCA", 
+            "GAA", 
+            "ATG", 
+            "GAA", 
+            "AAG", 
+            "GAA", 
+            "GGG", 
+            "AAA", 
+            "ATT", 
+            "TCW", 
+            "AAA", 
+            "ATT", 
+            "GGG", 
+            "CCT", 
+            "GAA", 
+            "AAT", 
+            "CCA", 
+            "TAC", 
+            "AAT", 
+            "ACT", 
+            "CCA", 
+            "GTA", 
+            "TTT", 
+            "GCY", 
+            "ATA", 
+            "AAG", 
+            "AAA", 
+            "AAG", 
+            "AAC", 
+            "AGT", 
+            "ACT", 
+            "AGA", 
+            "TGG", 
+            "AGA", 
+            "AAA", 
+            "TTA", 
+            "GTA", 
+            "GAT", 
+            "TTC", 
+            "AGA", 
+            "GAA", 
+            "CTT", 
+            "AAT", 
+            "AAG", 
+            "AGA", 
+            "ACT", 
+            "CAA", 
+            "GAC", 
+            "TTC", 
+            "TGG", 
+            "GAA", 
+            "GTT", 
+            "CAA", 
+            "TTA", 
+            "GGA", 
+            "ATA", 
+            "CCA", 
+            "CAT", 
+            "CCC", 
+            "KCA", 
+            "GGG", 
+            "TTA", 
+            "AAA", 
+            "AAG", 
+            "AAA", 
+            "AAA", 
+            "TCA", 
+            "GTA", 
+            "ACA", 
+            "GTA", 
+            "CTG", 
+            "GAT", 
+            "GTG", 
+            "GGT", 
+            "GAT", 
+            "GCA", 
+            "TAC", 
+            "TTT", 
+            "TCA", 
+            "GTT", 
+            "CCC", 
+            "TTA", 
+            "TAT", 
+            "GAA", 
+            "GAC", 
+            "TTT", 
+            "AGA", 
+            "AAG", 
+            "TAT", 
+            "ACT", 
+            "GCA", 
+            "TTT", 
+            "ACC", 
+            "ATA", 
+            "CCT", 
+            "AGT", 
+            "AAA", 
+            "AAC", 
+            "AAT", 
+            "GAG", 
+            "ACA", 
+            "CCA", 
+            "GGG", 
+            "ATT", 
+            "AGA", 
+            "TAC", 
+            "CAG", 
+            "TAT", 
+            "AAT", 
+            "GTG", 
+            "CTT", 
+            "CCA", 
+            "CAG", 
+            "GGA", 
+            "TGG", 
+            "AAA", 
+            "GGA", 
+            "TCA", 
+            "CCA", 
+            "GCA", 
+            "ATA", 
+            "TTC", 
+            "CAA", 
+            "AGT", 
+            "AGC", 
+            "ATG", 
+            "ACA", 
+            "AAA", 
+            "ATC", 
+            "TTA", 
+            "GAG", 
+            "CCT", 
+            "TTT", 
+            "AGA", 
+            "CAA", 
+            "CAA", 
+            "AAT", 
+            "CCA", 
+            "GAC", 
+            "CTA", 
+            "GTT", 
+            "ATC", 
+            "TAT", 
+            "CAA", 
+            "TAC", 
+            "ATG", 
+            "GAT", 
+            "GAT", 
+            "TTG", 
+            "TAT", 
+            "GTA", 
+            "GGA", 
+            "TCT", 
+            "GAC", 
+            "TTA", 
+            "GAA", 
+            "ATA", 
+            "GGG", 
+            "CAG", 
+            "CAT", 
+            "AGA", 
+            "ACA", 
+            "AAA", 
+            "ATA", 
+            "GAG", 
+            "GAA", 
+            "CTG", 
+            "AGA", 
+            "CAA", 
+            "CAT", 
+            "CTG", 
+            "TTG", 
+            "AGG", 
+            "TGG", 
+            "GGA", 
+            "TTT", 
+            "TTC", 
+            "ACA", 
+            "CCA", 
+            "GAT", 
+            "CAA", 
+            "AAA", 
+            "CAT", 
+            "CAG", 
+            "AAR", 
+            "GAA", 
+            "CCY", 
+            "CCA", 
+            "TTC", 
+            "CTT", 
+            "TGG", 
+            "ATG", 
+            "GGT", 
+            "TAT", 
+            "GAA", 
+            "CTC", 
+            "CAT", 
+            "CCT", 
+            "GAT", 
+            "AAA", 
+            "TGG", 
+            "ACA", 
+            "GTA", 
+            "CAG", 
+            "CCT", 
+            "ATA", 
+            "CAG", 
+            "CTG", 
+            "CCA", 
+            "GAA"
+          ], 
+          "mutationLine": [
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " N ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " A ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " N ", 
+            " - ", 
+            " - ", 
+            " R ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            "AS ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " Y ", 
+            " E ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " K ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " Q ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " L ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " F ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " Q ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " - ", 
+            " Q ", 
+            " - ", 
+            " - ", 
+            " - "
+          ]
+        }
+      }
+    ], 
+    "drugResistance": [
+      {
+        "version": {
+          "text": "8.7", 
+          "publishDate": "2018-10-19"
+        }, 
+        "gene": {
+          "name": "PR"
+        }, 
+        "drugScores": [
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "ATV", 
+              "displayAbbr": "ATV/r"
+            }, 
+            "score": 85.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 25.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "DRV", 
+              "displayAbbr": "DRV/r"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "FPV", 
+              "displayAbbr": "FPV/r"
+            }, 
+            "score": 75.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 20.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "IDV", 
+              "displayAbbr": "IDV/r"
+            }, 
+            "score": 105.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 30.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 30.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "LPV", 
+              "displayAbbr": "LPV/r"
+            }, 
+            "score": 80.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 30.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "NFV", 
+              "displayAbbr": "NFV"
+            }, 
+            "score": 140.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 20.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 30.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 60.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "SQV", 
+              "displayAbbr": "SQV/r"
+            }, 
+            "score": 105.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 45.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "V82A", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It reduces susceptibility to these PIs and contributes cross-resistance to each of the remaining PIs except DRV and TPV."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "L90M", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "L90M is a non-polymorphic PI-selected mutation that reduces susceptibility to each of the PIs except TPV and DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "PI"
+            }, 
+            "drug": {
+              "name": "TPV", 
+              "displayAbbr": "TPV/r"
+            }, 
+            "score": 20.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "I54V", 
+                    "primaryType": "Major", 
+                    "comments": [
+                      {
+                        "type": "Major", 
+                        "text": "I54V is a non-polymorphic PI-selected mutation that contributes reduced susceptibility to each of the PIs except DRV."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 20.0
+              }
+            ], 
+            "text": "Low-Level Resistance"
+          }
+        ]
+      }, 
+      {
+        "version": {
+          "text": "8.7", 
+          "publishDate": "2018-10-19"
+        }, 
+        "gene": {
+          "name": "RT"
+        }, 
+        "drugScores": [
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "ABC", 
+              "displayAbbr": "ABC"
+            }, 
+            "score": 45.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "Intermediate Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "AZT", 
+              "displayAbbr": "AZT"
+            }, 
+            "score": 115.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 30.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 40.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "D4T", 
+              "displayAbbr": "D4T"
+            }, 
+            "score": 100.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 40.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "High-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "DDI", 
+              "displayAbbr": "DDI"
+            }, 
+            "score": 55.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 15.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "Intermediate Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "FTC", 
+              "displayAbbr": "FTC"
+            }, 
+            "score": 10.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "Potential Low-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "LMV", 
+              "displayAbbr": "3TC"
+            }, 
+            "score": 10.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }
+            ], 
+            "text": "Potential Low-Level Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NRTI"
+            }, 
+            "drug": {
+              "name": "TDF", 
+              "displayAbbr": "TDF"
+            }, 
+            "score": 45.0, 
+            "partialScores": [
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 10.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "D67N", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "D67N is a non-polymorphic TAM associated with low-level resistance to AZT and d4T. When present with other TAMs, it contributes reduced susceptibility to ABC, ddI, and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "K219Q", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K219Q/E are accessory TAMS associated with reduced susceptibility to AZT and possibly d4T."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }, 
+              {
+                "mutations": [
+                  {
+                    "text": "K70R", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "K70R causes intermediate resistance to AZT and possibly low-level resistance to D4T, DDI, ABC and TDF."
+                      }
+                    ]
+                  }, 
+                  {
+                    "text": "T215F", 
+                    "primaryType": "NRTI", 
+                    "comments": [
+                      {
+                        "type": "NRTI", 
+                        "text": "T215F is a TAM that causes intermediate/high-level resistance to AZT and d4T, low-level resistance to ddI, and potentially low-level resistance to ABC and TDF."
+                      }
+                    ]
+                  }
+                ], 
+                "score": 5.0
+              }
+            ], 
+            "text": "Intermediate Resistance"
+          }, 
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            }, 
+            "drug": {
+              "name": "DOR", 
+              "displayAbbr": "DOR"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }, 
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            }, 
+            "drug": {
+              "name": "EFV", 
+              "displayAbbr": "EFV"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }, 
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            }, 
+            "drug": {
+              "name": "ETR", 
+              "displayAbbr": "ETR"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }, 
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            }, 
+            "drug": {
+              "name": "NVP", 
+              "displayAbbr": "NVP"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }, 
+          {
+            "drugClass": {
+              "name": "NNRTI"
+            }, 
+            "drug": {
+              "name": "RPV", 
+              "displayAbbr": "RPV"
+            }, 
+            "score": 0.0, 
+            "partialScores": [], 
+            "text": "Susceptible"
+          }
+        ]
+      }
+    ]
+  }
+]
