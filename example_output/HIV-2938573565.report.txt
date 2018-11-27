@@ -1,0 +1,56 @@
++-------------------------------------------------------------------------------+
+|  HIV Resistance Genotyping Report [Short format] - PHW Pathogen Genomics Unit |
++------------------------+------------------------------------------------------+
+| PHW Episode Number     | Subtype (Divergence from subtype reference)          |
++------------------------+------------------------------------------------------+
+| HIV-2938573565         | B (4.60%)                                            |
++------------------------+------------------------------------------------------+
++--------------------------------------+
+|  Protease [Codons analysed 4-99/99]  |
++--------------+-------+---------------+
+| Drug Class   | Drug  | Status        |
++--------------+-------+---------------+
+| PI           | ATV   | Susceptible   |
+| PI           | DRV   | Susceptible   |
+| PI           | FPV   | Susceptible   |
+| PI           | IDV   | Susceptible   |
+| PI           | LPV   | Susceptible   |
+| PI           | NFV   | Susceptible   |
+| PI           | SQV   | Susceptible   |
+| PI           | TPV   | Susceptible   |
++--------------+-------+---------------+
++-------------------------------------------------------+
+|   Reverse Transcriptase [Codons analysed 1-560/560]   |
++-------------+-------+---------------------------------+
+| Drug Class  | Drug  | Status                          |
++-------------+-------+---------------------------------+
+| NRTI        | ABC   | Susceptible                     |
+| NRTI        | AZT   | Susceptible                     |
+| NRTI        | D4T   | Susceptible                     |
+| NRTI        | DDI   | Susceptible                     |
+| NRTI        | FTC   | Susceptible                     |
+| NRTI        | LMV   | Susceptible                     |
+| NRTI        | TDF   | Susceptible                     |
+| NNRTI       | DOR   | Susceptible                     |
+| NNRTI       | EFV   | Potential Low-Level Resistance  |
+| NNRTI       | ETR   | Potential Low-Level Resistance  |
+| NNRTI       | NVP   | Potential Low-Level Resistance  |
+| NNRTI       | RPV   | Potential Low-Level Resistance  |
++-------------+-------+---------------------------------+
++----------------------------------------+
+| Integrase [Codons analysed 1-279/288]  |
++---------------+-------+----------------+
+| Drug Class    | Drug  | Status         |
++---------------+-------+----------------+
+| INSTI         | BIC   | Susceptible    |
+| INSTI         | DTG   | Susceptible    |
+| INSTI         | EVG   | Susceptible    |
+| INSTI         | RAL   | Susceptible    |
++---------------+-------+----------------+
++------------------------------------------+
+|        Stanford HIVdb Information        |
++---------------+------------+-------------+
+| HIVdb Version | HIVdb Date | Access Date |
++---------------+------------+-------------+
+|      8.7      | 2018-10-19 |  2018-11-27 |
++---------------+------------+-------------+
