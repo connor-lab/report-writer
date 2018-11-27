@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 
-from utils import makehash
+from utils import *
+from sequence import *
 
 import argparse
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
 import json
 from prettytable import PrettyTable
 
@@ -26,30 +30,6 @@ def create_subtype_table(sampleID, input_json):
     except:
         print("Failed to create subtype table")
     return subtype_table
-
-
-
-def extract_gene_sequences(input_json):
-    try:
-        nucleic_acid = {}
-        for gene in input_json['alignedGeneSequences']:
-            genename = gene['gene']['name']
-            nucleic_acid[genename] = gene['alignedNAs']
-    except:
-        print("Nucleic acid alignment not found")
-    return nucleic_acid
-
-
-
-def extract_aa_sequences(input_json):
-    try:
-        amino_acid = {}
-        for gene in input_json['alignedGeneSequences']:
-            genename = gene['gene']['name']
-            amino_acid[genename] = gene['alignedAAs']
-    except:
-        print("Amino acid alignment not found")
-    return amino_acid
 
 
 
@@ -86,9 +66,6 @@ def create_resistance_summary_table(input_json):
     try:
         sequence_lengths = extract_lengths(input_json)
         drug_resistance_summary = extract_resistance_summary(input_json)
-        longformatgene = { 'IN' : 'Integrase', 
-                           'PR' : 'Protease', 
-                           'RT' : 'Reverse Transcriptase' }
         resistance_table_list = []
         for gene,drugclass in drug_resistance_summary.items():
             resistance_summary_table = PrettyTable()
@@ -96,11 +73,12 @@ def create_resistance_summary_table(input_json):
             for drugclass,drug in drugclass.items():
                 for drug,status in drug.items():
                     resistance_summary_table.add_row([drugclass, drug, status])
-            
+
+            long_name = convert_gene_name(gene)
             firstAA = str(sequence_lengths[gene]['firstAA'])
             lastAA = str(sequence_lengths[gene]['lastAA'])
             genelength = str(sequence_lengths[gene]['length'])
-            table_title = longformatgene[gene] + " [Codons analysed " + firstAA + "-" + lastAA + "/" + genelength + "]"
+            table_title = long_name + " [Codons analysed " + firstAA + "-" + lastAA + "/" + genelength + "]"
             resistance_summary_table.title = table_title 
             resistance_summary_table.align = "l"
 
@@ -158,6 +136,7 @@ def main(args):
     with open(args.sierrapy_json) as f:
         data = json.load(f)
         sierrapy_json = data[0]
+    write_sequences_to_file(args.output_prefix, args.sample_id, sierrapy_json)
     print(create_subtype_table(args.sample_id, sierrapy_json))
     for i in create_resistance_summary_table(sierrapy_json):
         print(i)
@@ -167,5 +146,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Turns SierraPy JSON into useful output')
     parser.add_argument('sierrapy_json', help='JSON file from SierraPy program')
     parser.add_argument('sample_id', help='Sample ID')
+    parser.add_argument('output_prefix', help='Gene sequence output prefix')
     args = parser.parse_args()
     main(args)
