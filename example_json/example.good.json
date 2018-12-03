@@ -1,7 +1,7 @@
 [
   {
     "inputSequence": {
-      "header": "HIV-1570766764_S10_L001 [Variant caller: lofreq] [Minor variant bases IUPAC] [Variant frequency: 0.2]", 
+      "header": "HIV-2938573565 [Variant caller: lofreq] [Minor variant bases IUPAC] [Variant frequency: 0.2]", 
       "SHA512": "abb33c4d3ac4b8d3d1b436453d9f4bbf7dbe62046dc561cf20012362bcd514006f2cbee7731b026c93fe79e18d244639d6e7110107c0c079782f322b14282c5f"
     }, 
     "subtypeText": "B (4.60%)", 

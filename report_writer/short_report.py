@@ -44,9 +44,11 @@ def extract_resistance_summary(input_json):
         for i in input_json['drugResistance']:
             for j in i['drugScores']:
                 text = j['text']
-                drug = j['drug']['name']
+                drug = j['drug']['displayAbbr']
                 drugclass = j['drugClass']['name']
                 gene = i['gene']['name']
+                if '/' in drug:
+                    drug = drug.split('/')[0]
                 gene_resistance_summary[gene][drugclass][drug] = text
     except:
         print("Failed to parse drug resistance information")
@@ -85,7 +87,8 @@ def extract_database_version(input_json):
             version = i['version']['text']
             publish_date = i['version']['publishDate']
             access_date = str(date.today())
-        version_dict.update({'version' : version, 'publishDate' : publish_date, 'accessDate' : access_date })
+            version_dict.update({'version' : version, 'publishDate' : publish_date, 'accessDate' : access_date })
+        print(version_dict)
     except:
         print("Failed to make database version table")
     return version_dict
@@ -103,12 +106,11 @@ def create_version_table(input_json):
     return database_information_table
 
 def write_report_tables(output_prefix, sample_id, input_json):
-#    try:
-        report_tables = []
-        report_tables.append(create_subtype_table(sample_id, input_json))
-        for table in create_resistance_summary_table(input_json):
-            report_tables.append(table)
-        report_tables.append(create_version_table(input_json))
-        with open(output_prefix + '.report.txt', 'w', newline='\r\n') as file:
-                for i in report_tables:
-                    file.write(i.get_string() + '\r\n')
+    report_tables = []
+    report_tables.append(create_subtype_table(sample_id, input_json))
+    for table in create_resistance_summary_table(input_json):
+        report_tables.append(table)
+    report_tables.append(create_version_table(input_json))
+    with open(output_prefix + '.report.txt', 'w', newline='\r\n') as file:
+        for i in report_tables:
+            file.write(i.get_string() + '\r\n')

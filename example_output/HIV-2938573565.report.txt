@@ -29,7 +29,7 @@
 | NRTI        | D4T   | Susceptible                     |
 | NRTI        | DDI   | Susceptible                     |
 | NRTI        | FTC   | Susceptible                     |
-| NRTI        | LMV   | Susceptible                     |
+| NRTI        | 3TC   | Susceptible                     |
 | NRTI        | TDF   | Susceptible                     |
 | NNRTI       | DOR   | Susceptible                     |
 | NNRTI       | EFV   | Potential Low-Level Resistance  |
@@ -52,5 +52,5 @@
 +---------------+------------+-------------+
 | HIVdb Version | HIVdb Date | Access Date |
 +---------------+------------+-------------+
-|      8.7      | 2018-10-19 |  2018-11-27 |
+|      8.7      | 2018-10-19 |  2018-12-03 |
 +---------------+------------+-------------+
