@@ -1,4 +1,4 @@
-from utils import *
+from .utils import *
 
 def extract_drug_resistance_mutations(input_json):
     try:

@@ -1,4 +1,4 @@
-from utils import *
+from .utils import *
 
 from Bio import SeqIO
 from Bio.Seq import Seq

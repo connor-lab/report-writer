@@ -1,4 +1,4 @@
-from utils import *
+from .utils import *
 
 from datetime import date
 from prettytable import PrettyTable
