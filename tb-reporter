@@ -14,12 +14,7 @@ def main(args):
         mykrobe_data = json.load(f)
     utils.create_output_directory(args.output_dir)
     output_prefix = utils.create_output_prefix(args.output_dir, args.output_prefix)
-    #report.write_report_tables(output_prefix, args.sample_id, mykrobe_data)
     report.write_report_tables(output_prefix, mykrobe_data, sample_id=args.sample_id)
-    #print(report.create_phylogenetics_summary_table(mykrobe_data))
-    #print(tbdb.extract_database_version(mykrobe_data))
-    #report.create_sample_table(mykrobe_data, sample_id=args.sample_id)
-    #report.create_database_summary_table(mykrobe_data)
 
 
 if __name__ == '__main__':
