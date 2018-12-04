@@ -1,0 +1,10 @@
+mykrobe_version,file,plate_name,sample,drug,phylo_group,species,lineage,phylo_group_per_covg,species_per_covg,lineage_per_covg,phylo_group_depth,species_depth,lineage_depth,susceptibility,variants (gene:alt_depth:wt_depth:conf),genes (prot_mut-ref_mut:percent_covg:depth)
+v0.1.1,WCMID-2357398542,,files,Amikacin,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Capreomycin,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Ethambutol,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Isoniazid,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Kanamycin,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Pyrazinamide,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,R,pncA_H57D-H57D:68:0:5862,
+v0.1.1,WCMID-2357398542,,files,Quinolones,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Rifampicin,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,
+v0.1.1,WCMID-2357398542,,files,Streptomycin,Mycobacterium_tuberculosis_complex,Mycobacterium_bovis,Unknown,99.697,65.229,-1,57.0,43.0,-1,S,,

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 
-#from utils import *
-#from sequence import *
-#from short_report import *
-
-from report_writer import *
+from report_writer import hiv_short_report as report
+from report_writer import hiv_mutation as mutation
+from report_writer import hiv_sequence as sequence
+from report_writer import utils
 
 import argparse
 import json
@@ -14,10 +13,14 @@ def main(args):
     with open(args.sierrapy_json) as f:
         data = json.load(f)
         sierrapy_json = data[0]
-    create_output_directory(args.output_dir)
-    output_path = create_output_prefix(args.output_dir, args.output_prefix)
-    write_report_tables(output_path, args.sample_id, sierrapy_json)
-    write_sequences_to_file(output_path, args.sample_id, sierrapy_json)
+    utils.create_output_directory(args.output_dir)
+    output_path = utils.create_output_prefix(args.output_dir, args.output_prefix)
+    report.write_report_tables(output_path, args.sample_id, sierrapy_json)
+    sequence.write_sequences_to_file(output_path, args.sample_id, sierrapy_json)
+
+    #mutation.extract_drug_resistance_mutations(sierrapy_json)
+    #mutation.extract_all_mutations(sierrapy_json)
+    #write_mutations_csv(output_path, args.sample_id, sierrapy_json)
 
 
 if __name__ == '__main__':
@@ -30,5 +33,3 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--output_directory', default=os.getcwd(), action='store', dest='output_dir', help='Output directory [Default: $(pwd)]')
     args = parser.parse_args()
     main(args)
-
-

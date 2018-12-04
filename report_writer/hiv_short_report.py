@@ -1,15 +1,10 @@
 from .utils import *
+from .hiv_database import *
+from .hiv_drug_resistance import *
+from .hiv_phylogenetics import *
+from .hiv_sequence import *
 
-from datetime import date
 from prettytable import PrettyTable
-
-def extract_subtype_information(input_json):
-    try:
-        subtype = input_json['subtypeText']
-    except:
-        print("Subtype data not found")
-    return subtype
-
 
 def create_subtype_table(sample_id, input_json):
     try:
@@ -24,40 +19,9 @@ def create_subtype_table(sample_id, input_json):
     return subtype_table
 
 
-
-def extract_lengths(input_json):
-    try:
-        gene_lengths = {}
-        for gene in input_json['alignedGeneSequences']:
-            genename = gene['gene']['name']
-            gene_lengths[genename] = { 'firstAA' : gene['firstAA'],
-                                        'lastAA' : gene['lastAA'],
-                                        'length' : gene['gene']['length'] }
-    except:
-        print('Gene length data not found')
-    return gene_lengths
-
-
-def extract_resistance_summary(input_json):
-    try:
-        gene_resistance_summary = makehash()
-        for i in input_json['drugResistance']:
-            for j in i['drugScores']:
-                text = j['text']
-                drug = j['drug']['displayAbbr']
-                drugclass = j['drugClass']['name']
-                gene = i['gene']['name']
-                if '/' in drug:
-                    drug = drug.split('/')[0]
-                gene_resistance_summary[gene][drugclass][drug] = text
-    except:
-        print("Failed to parse drug resistance information")
-
-    return gene_resistance_summary
-
 def create_resistance_summary_table(input_json):
     try:
-        sequence_lengths = extract_lengths(input_json)
+        sequence_lengths = extract_sequence_lengths(input_json)
         drug_resistance_summary = extract_resistance_summary(input_json)
         resistance_table_list = []
         for gene,drugclass in drug_resistance_summary.items():
@@ -80,18 +44,6 @@ def create_resistance_summary_table(input_json):
         print('Failed to make resistance summary tables')
     return resistance_table_list
 
-def extract_database_version(input_json):
-    try:
-        version_dict = {}
-        for i in input_json['drugResistance']:
-            version = i['version']['text']
-            publish_date = i['version']['publishDate']
-            access_date = str(date.today())
-            version_dict.update({'version' : version, 'publishDate' : publish_date, 'accessDate' : access_date })
-        print(version_dict)
-    except:
-        print("Failed to make database version table")
-    return version_dict
 
 def create_version_table(input_json):
     try:

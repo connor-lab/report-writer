@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+from report_writer import tb_database as tbdb
+from report_writer import tb_short_report as report
+from report_writer import tb_phylogenetics as tbphylo
+from report_writer import utils
+
+import argparse
+import json
+import os
+
+def main(args):
+    with open(args.mykrobe_json) as f:
+        mykrobe_data = json.load(f)
+    utils.create_output_directory(args.output_dir)
+    output_prefix = utils.create_output_prefix(args.output_dir, args.output_prefix)
+    #report.write_report_tables(output_prefix, args.sample_id, mykrobe_data)
+    report.write_report_tables(output_prefix, mykrobe_data, sample_id=args.sample_id)
+    #print(report.create_phylogenetics_summary_table(mykrobe_data))
+    #print(tbdb.extract_database_version(mykrobe_data))
+    #report.create_sample_table(mykrobe_data, sample_id=args.sample_id)
+    #report.create_database_summary_table(mykrobe_data)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description = 'Turns SierraPy JSON into useful output')
+    required_args = parser.add_argument_group('required arguments')
+    required_args.add_argument('-j', '--json', action='store', required=True, dest='mykrobe_json', help='JSON file from Mykrobe program')
+    required_args.add_argument('-p', '--prefix', action='store', required=True, dest='output_prefix', help='Output file prefix')
+   
+    parser.add_argument('-i', '--id', action='store', dest='sample_id', help='Sample ID')
+    parser.add_argument('-o', '--output_directory', default=os.getcwd(), action='store', dest='output_dir', help='Output directory [Default: $(pwd)]')
+    args = parser.parse_args()
+    main(args)

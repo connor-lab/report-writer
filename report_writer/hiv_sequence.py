@@ -4,6 +4,19 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
+
+def extract_sequence_lengths(input_json):
+    try:
+        gene_lengths = {}
+        for gene in input_json['alignedGeneSequences']:
+            genename = gene['gene']['name']
+            gene_lengths[genename] = { 'firstAA' : gene['firstAA'],
+                                        'lastAA' : gene['lastAA'],
+                                        'length' : gene['gene']['length'] }
+    except:
+        print('Gene length data not found')
+    return gene_lengths
+
 def make_sequence_object_list(seq_dict):
     try:
         seq_list = []
