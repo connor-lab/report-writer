@@ -1,0 +1,42 @@
++---------------------------------------------------------------------------------------------+
+|   Mycobacterium Genotyping & Resistance Report [Short Format] - PHW Pathogen Genomics Unit  |
++----------------------------------------------+----------------------------------------------+
+| Sample ID                                    | Report Date                                  |
++----------------------------------------------+----------------------------------------------+
+| WCMID-2357398542                             | 05-12-2018 15:00                             |
++----------------------------------------------+----------------------------------------------+
++----------------------------------------------------------------------------------+
+|                                 Organism Summary                                 |
++------------------------------------+---------------------+---------+-------------+
+| Phylo Group                        | Species             | Lineage | Sub Complex |
++------------------------------------+---------------------+---------+-------------+
+| Mycobacterium tuberculosis complex | Mycobacterium bovis | Unknown | Unknown     |
++------------------------------------+---------------------+---------+-------------+
++------------------------------------------------------------+
+|       Drug Susceptibility [First Line Therapeutics]        |
++----------------+--------------+----------------------------+
+| Interpretation | Drug         | Resistance Gene (Mutation) |
++----------------+--------------+----------------------------+
+| Resistant      | Pyrazinamide | pncA (H57D)                |
+| Susceptible    | Ethambutol   | No mutation detected       |
+| Susceptible    | Isoniazid    | No mutation detected       |
+| Susceptible    | Rifampicin   | No mutation detected       |
++----------------+--------------+----------------------------+
++------------------------------------------------------------+
+|       Drug Susceptibility [Second Line Therapeutics]       |
++----------------+--------------+----------------------------+
+| Interpretation | Drug         | Resistance Gene (Mutation) |
++----------------+--------------+----------------------------+
+| Susceptible    | Amikacin     | No mutation detected       |
+| Susceptible    | Capreomycin  | No mutation detected       |
+| Susceptible    | Kanamycin    | No mutation detected       |
+| Susceptible    | Quinolones   | No mutation detected       |
+| Susceptible    | Streptomycin | No mutation detected       |
++----------------+--------------+----------------------------+
++----------------------------------------------------------------------------------------+
+|                              Software & Database Summary                               |
++---------------+-------------------+----------------------------------------------------+
+| mykrobe-atlas | mykrobe-predictor |                     Probe Sets                     |
++---------------+-------------------+----------------------------------------------------+
+|     v0.1.1    |       v0.1.1      | tb-species-170421,tb-bradley-probe-set-feb-09-2017 |
++---------------+-------------------+----------------------------------------------------+
