@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-from report_writer import tb_database as tbdb
 from report_writer import tb_short_report as report
-from report_writer import tb_phylogenetics as tbphylo
 from report_writer import utils
 
 import argparse
@@ -18,12 +16,12 @@ def main(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description = 'Turns SierraPy JSON into useful output')
+    parser = argparse.ArgumentParser(description = 'Turns Mykrobe JSON into a summary report')
     required_args = parser.add_argument_group('required arguments')
     required_args.add_argument('-j', '--json', action='store', required=True, dest='mykrobe_json', help='JSON file from Mykrobe program')
     required_args.add_argument('-p', '--prefix', action='store', required=True, dest='output_prefix', help='Output file prefix')
    
-    parser.add_argument('-i', '--id', action='store', dest='sample_id', help='Sample ID')
+    parser.add_argument('-i', '--id', action='store', dest='sample_id', help='Sample ID [Default: Detect from Mykrobe output]')
     parser.add_argument('-o', '--output_directory', default=os.getcwd(), action='store', dest='output_dir', help='Output directory [Default: $(pwd)]')
     args = parser.parse_args()
     main(args)

@@ -65,4 +65,4 @@ def write_report_tables(output_prefix, sample_id, input_json):
     report_tables.append(create_version_table(input_json))
     with open(output_prefix + '.report.txt', 'w', newline='\r\n') as file:
         for i in report_tables:
-            file.write(i.get_string() + '\r\n')
+            file.write(i.get_string().replace('\n', '\r\n') + '\r\n')

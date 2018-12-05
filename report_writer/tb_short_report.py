@@ -95,5 +95,5 @@ def write_report_tables(output_prefix, mykrobe_data, sample_id=None):
     report_tables.append(create_database_summary_table(mykrobe_data))
     with open(output_prefix + '.report.txt', 'w', newline='\r\n') as file:
         for i in report_tables:
-            file.write(i.get_string() + '\r\n')
+            file.write(i.get_string().replace('\n', '\r\n') + '\r\n')
 
