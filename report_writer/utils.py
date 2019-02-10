@@ -34,7 +34,7 @@ def convert_mykrobe_susceptibility(short_susceptibility):
 
 def mykrobe_susceptibility_line(drug):
     fist_line_drugs = [ 'Isoniazid', 'Ethambutol', 'Pyrazinamide', 'Rifampicin' ]
-    second_line_drugs = ['Streptomycin', 'Kanamycin', 'Capreomycin', 'Amikacin', 'Quinolones']
+    second_line_drugs = ['Streptomycin', 'Kanamycin', 'Capreomycin', 'Amikacin', 'Ciprofloxacin', 'Moxifloxacin', 'Ofloxacin']
     if drug in fist_line_drugs:
         drug_line = 'First Line'
     elif drug in second_line_drugs:
